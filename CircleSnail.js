@@ -168,7 +168,7 @@ export default class CircleSnail extends Component {
       >
         <Svg width={size} height={size}>
         <Circle cx={size/2} cy={size/2}  r={radius}  fill={backgroundColor}/>
-          <Circle cx={size/2} cy={size/2}  r={radius}  fill={'white'}/>
+          <Circle cx={size/2} cy={size/2}  r={radius - thickness}  fill={'white'}/>
           <AnimatedArc
             direction={
               direction === 'counter-clockwise'
