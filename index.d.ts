@@ -359,6 +359,14 @@ declare module 'react-native-progress' {
      * @default counter-clockwise
      */
     direction?: 'clockwise' | 'counter-clockwise';
+     /**
+     * backgroundColor default transprent
+     *
+     * @type {string}
+     * @memberof CircleSnailPropTypes
+     * @default transparent
+     */
+      backgroundColor?: string;
   }
 
   export class Bar extends React.Component<BarPropTypes> {}
