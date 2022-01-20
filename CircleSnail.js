@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Animated, Easing } from 'react-native';
-import { Svg } from 'react-native-svg';
+import { Svg, Circle } from 'react-native-svg';
 
 import Arc from './Shapes/Arc';
 
