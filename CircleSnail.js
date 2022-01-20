@@ -26,6 +26,7 @@ export default class CircleSnail extends Component {
     style: PropTypes.any,
     thickness: PropTypes.number,
     strokeCap: PropTypes.string,
+    backgroundColor: PropTypes.string,
     useNativeDriver: PropTypes.bool,
   };
 
@@ -37,6 +38,7 @@ export default class CircleSnail extends Component {
     size: 40,
     thickness: 3,
     strokeCap: 'round',
+    backgroundColor: 'transparent',
     useNativeDriver: false,
   };
 
@@ -129,6 +131,7 @@ export default class CircleSnail extends Component {
       style,
       thickness,
       strokeCap,
+      backgroundColor,
       ...restProps
     } = this.props;
 
@@ -164,6 +167,8 @@ export default class CircleSnail extends Component {
         ]}
       >
         <Svg width={size} height={size}>
+        <Circle cx={size/2} cy={size/2}  r={radius}  fill={backgroundColor}/>
+          <Circle cx={size/2} cy={size/2}  r={radius}  fill={'white'}/>
           <AnimatedArc
             direction={
               direction === 'counter-clockwise'
